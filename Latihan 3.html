@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 3</title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#tombol_fade_out").click(function() {$("#kotak").fadeOut("fast") });
+			$("#tombol_fade_in").click(function() {$("#kotak").fadeIn("fast") });
+			$("#tombol_fade_to").click(function() {$("#kotak").fadeOut(3000) });
+		});
+	</script>
+	<style type="text/css">
+		#kotak {
+			width: 210px;
+			height: 150px;
+			background: yellow;
+			border : 2px solid black;
+		}
+	</style>
+</head>
+<body>
+<div id="kotak"></div>
+<br>
+<button id="tombol_fade_out">fade Out</button>
+<button id="tombol_fade_in">fade In</button>
+<button id="tombol_fade_to">fade to 0.3</button>
+</body>
+</html>
